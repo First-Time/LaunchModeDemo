@@ -26,7 +26,7 @@
         <activity
             android:name=".SingleTaskActivity"
             android:launchMode="singleTask"
-            android:taskAffinity="com.lyf.test.launchmodedemo" />
+            android:taskAffinity="com.lyf.test.singleTask" />
         <activity
             android:name=".SingleInstanceActivity"
             android:launchMode="singleInstance">

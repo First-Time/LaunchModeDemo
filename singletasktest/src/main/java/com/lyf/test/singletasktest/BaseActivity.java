@@ -1,4 +1,4 @@
-package com.lyf.test.launchmodedemo;
+package com.lyf.test.singletasktest;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/singleinstancedemo" />
+            <option value="$PROJECT_DIR$/singletasktest" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
