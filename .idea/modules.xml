@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LaunchMode.iml" filepath="$PROJECT_DIR$/LaunchMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LaunchModeDemo.iml" filepath="$PROJECT_DIR$/LaunchModeDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/singleinstancedemo/singleinstancedemo.iml" filepath="$PROJECT_DIR$/singleinstancedemo/singleinstancedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/singletasktest/singletasktest.iml" filepath="$PROJECT_DIR$/singletasktest/singletasktest.iml" />

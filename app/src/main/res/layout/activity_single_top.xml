@@ -7,17 +7,17 @@
     tools:context="com.lyf.test.launchmodedemo.SingleTopActivity">
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_self"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="启动自身"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintBottom_toTopOf="@+id/btn_other"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btn_other"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -26,5 +26,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_self" />
 </android.support.constraint.ConstraintLayout>

@@ -25,6 +25,18 @@ public class BaseActivity extends AppCompatActivity {
         dumpTaskAffinity();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("LaunchMode", "*****onStart()方法*****");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("LaunchMode", "*****onResume()方法*****");
+    }
+
     protected void dumpTaskAffinity() {
         try {
             ActivityInfo info = this.getPackageManager()

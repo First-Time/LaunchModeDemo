@@ -7,7 +7,7 @@
     tools:context="com.lyf.test.singleinstancedemo.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_instance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="启动SingleInstanceActivity"

@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lyf.test.launchmodedemo.StandardActivity">
+    tools:context=".OtherInstanceActivity">
 
     <Button
         android:id="@+id/btn_self"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="启动自身"
+        android:text="启动SingleInstanceActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

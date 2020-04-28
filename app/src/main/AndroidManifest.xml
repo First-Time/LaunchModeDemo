@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".OtherInstanceActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,14 +30,16 @@
             android:taskAffinity="com.lyf.test.singleTask" />
         <activity
             android:name=".SingleInstanceActivity"
-            android:launchMode="singleInstance">
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.lyf.test.singleInstance">
             <intent-filter>
                 <action android:name="com.lyf.test.singleinstancedemo" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".OtherTopActivity" />
-        <activity android:name=".OtherTaskActivity"></activity>
+        <activity android:name=".OtherTaskActivity" />
     </application>
 
 </manifest>

@@ -17,9 +17,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OtherActivityActivity"
+            android:name=".OtherSingleTaskActivity"
             android:launchMode="singleTask"
-            android:taskAffinity="com.lyf.test.singleTask"></activity>
+            android:taskAffinity="com.lyf.test.singleTask" />
     </application>
 
 </manifest>

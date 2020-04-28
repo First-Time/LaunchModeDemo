@@ -5,53 +5,58 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 public class MainActivity extends BaseActivity {
 
-    @InjectView(R.id.button1)
-    Button button1;
+    @BindView(R.id.btn_standard)
+    Button btnStandard;
 
-    @InjectView(R.id.button2)
-    Button button2;
+    @BindView(R.id.btn_top)
+    Button btnTop;
 
-    @InjectView(R.id.button3)
-    Button button3;
+    @BindView(R.id.btn_task)
+    Button btnTask;
 
-    @InjectView(R.id.button4)
-    Button button4;
+    @BindView(R.id.btn_instance)
+    Button btnInstance;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.inject(this);
-        button1.setOnClickListener(new View.OnClickListener() {
+        ButterKnife.bind(this);
+
+        actionBar.setDisplayHomeAsUpEnabled(false);
+
+        btnStandard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, StandardActivity.class));
             }
         });
-        button2.setOnClickListener(new View.OnClickListener() {
+        btnTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SingleTopActivity.class));
             }
         });
-        button3.setOnClickListener(new View.OnClickListener() {
+        btnTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SingleTaskActivity.class));
             }
         });
-        button4.setOnClickListener(new View.OnClickListener() {
+        btnInstance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent singleInstanceIntent = new Intent();
-                singleInstanceIntent.setAction("com.lyf.test.singleinstancedemo");
-                startActivity(singleInstanceIntent);
+//                Intent singleInstanceIntent = new Intent();
+//                singleInstanceIntent.setAction("com.lyf.test.singleinstancedemo");
+//                startActivity(singleInstanceIntent);
+
+                startActivity(new Intent(MainActivity.this, SingleInstanceActivity.class));
             }
         });
     }
