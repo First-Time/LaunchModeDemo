@@ -20,7 +20,6 @@ public class BaseActivity extends AppCompatActivity {
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        Log.i("LaunchMode", "***** onCreate 方法******");
         Log.i("LaunchMode", "onCreate：" + getLocalClassName() + "    TaskId: " + getTaskId() + "    hasCode：" + this.hashCode());
         dumpTaskAffinity();
     }
@@ -28,7 +27,6 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        Log.i("LaunchMode", "***** onNewIntent 方法*****");
         Log.i("LaunchMode", "onNewIntent：" + getLocalClassName() + " TaskId：" + getTaskId() + " hasCode：" + this.hashCode());
         dumpTaskAffinity();
     }
@@ -36,13 +34,31 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.i("LaunchMode", "***** onStart 方法*****");
+        Log.i("LaunchMode", "onStart：" + getLocalClassName() + "    TaskId: " + getTaskId() + "    hasCode：" + this.hashCode());
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("LaunchMode", "***** onResume 方法*****");
+        Log.i("LaunchMode", "onResume：" + getLocalClassName() + "    TaskId: " + getTaskId() + "    hasCode：" + this.hashCode());
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("LaunchMode", "onPause：" + getLocalClassName() + "    TaskId: " + getTaskId() + "    hasCode：" + this.hashCode());
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("LaunchMode", "onStop：" + getLocalClassName() + "    TaskId: " + getTaskId() + "    hasCode：" + this.hashCode());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("LaunchMode", "onDestroy：" + getLocalClassName() + "    TaskId: " + getTaskId() + "    hasCode：" + this.hashCode());
     }
 
     protected void dumpTaskAffinity() {
